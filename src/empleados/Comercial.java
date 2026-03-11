@@ -1,14 +1,11 @@
 package empleados;
 
-public class Comercial {
+public class Comercial extends Empleado{
 
 	private double ventas;
-	private double sueldoBase;
 	
-	public Comercial(String nombre, String apellidos, double sueldoBase, double ventas) {
-		nombre= nombre;
-		apellidos= apellidos;
-		this.sueldoBase= sueldoBase;
+	public Comercial(String dni, String nombre, String apellidos, double sueldoBase, double ventas) {
+		super(dni, nombre, apellidos, sueldoBase); 
 		this.ventas= ventas;
 	}
 	
@@ -18,6 +15,6 @@ public class Comercial {
 	
 	public double getSueldo() {
 		
-		return sueldoBase + (ventas * 0.10); 
+		return getSueldoBase() + (ventas * 0.10); 
 	}
 }
