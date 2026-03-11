@@ -3,7 +3,11 @@ package empleados;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Plantilla plantilla= new Plantilla();
+		Consola consola= new Consola();
+		GestorEmpleados gestor= new GestorEmpleados(plantilla, consola);
+		
+		gestor.ejecutar();
 
 	}
 
