@@ -1,19 +1,16 @@
 package empleados;
 
-public class Tecnico {
+public class Tecnico extends Empleado{ 
 	
 	private int categoria;
-	private double sueldoBase;
 	
-	public Tecnico(String dni, String apellidos, double sueldoBase, int categoria) {
-		dni= dni; 
-		apellidos= apellidos;
-		this.sueldoBase= sueldoBase;
-		this.categoria= categoria;
+	public Tecnico(String dni, String nombre, String apellidos, double sueldoBase, int categoria) {
+		super(dni, nombre, apellidos, sueldoBase);
+		this.categoria= categoria; 
 	}
 	
 	public double getSueldo() {
 		
-		return sueldoBase + (categoria*100); 
+		return getSueldoBase() + (categoria*100); 
 	}
 }
