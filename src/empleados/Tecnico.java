@@ -3,13 +3,11 @@ package empleados;
 public class Tecnico {
 	
 	private int categoria;
-	String dni;
-	String apellidos;
-	double sueldoBase;
+	private double sueldoBase;
 	
 	public Tecnico(String dni, String apellidos, double sueldoBase, int categoria) {
-		this.dni= dni; 
-		this.apellidos= apellidos;
+		dni= dni; 
+		apellidos= apellidos;
 		this.sueldoBase= sueldoBase;
 		this.categoria= categoria;
 	}
