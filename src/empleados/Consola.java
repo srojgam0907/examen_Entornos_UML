@@ -78,7 +78,7 @@ public class Consola implements IEntradaSalida{
 
 	@Override
 	public void mostrarMenu() {
-		System.out.printf("1- Contratar Empleado\n2- Listar todos los empleados\n3- Listar empleados con filtro\n4- Salir");
+		System.out.printf("1- Contratar Empleado\n2- Listar todos los empleados\n3- Listar empleados con filtro\n4- Salir\n");
 	}
 
 	@Override
